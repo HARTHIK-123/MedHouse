@@ -18,10 +18,7 @@ const adminRoutes = require("./routes/adminRoutes");
 const complaintRoutes = require("./routes/complaintsRoutes");
 const attendanceRoutes = require("./routes/attendanceRoutes");
 
-app.use(cors({
-  origin: "http://localhost:5173",
-  credentials: true
-}));
+app.use(cors());
 app.use(express.json());
 
 connectDB();
