@@ -18,7 +18,21 @@ const adminRoutes = require("./routes/adminRoutes");
 const complaintRoutes = require("./routes/complaintsRoutes");
 const attendanceRoutes = require("./routes/attendanceRoutes");
 
-app.use(cors());
+// CORS configuration
+const corsOptions = {
+  origin: [
+    "https://med-house-ub6p.vercel.app",
+    "http://localhost:3000",
+    "http://localhost:5173",
+    "http://localhost:5174",
+  ],
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"],
+  optionsSuccessStatus: 200,
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 connectDB();
@@ -33,7 +47,7 @@ app.use("/api/v1/leave", leaveRoutes);
 app.use("/api/v1/complaint", complaintRoutes);
 app.use("/api/v1/user", userRoutes);
 app.use("/api/v1/admin", adminRoutes);
-app.use('/api/v1/attendance', attendanceRoutes);
+app.use("/api/v1/attendance", attendanceRoutes);
 
 app.listen(port, () =>
   console.log(`Server running on port http://localhost:${port}`)
