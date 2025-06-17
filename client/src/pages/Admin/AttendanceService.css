@@ -1,0 +1,29 @@
+.attendance-service-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .attendance-controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  .date-picker {
+    width: 200px;
+  }
+  
+  .submit-btn {
+    margin-left: auto;
+  }
+  
+  .attendance-table {
+    margin-top: 20px;
+  }
+  
+  /* Status tags */
+  .ant-tag {
+    margin-right: 0;
+  }

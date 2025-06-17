@@ -1,0 +1,103 @@
+/* Container for entire page */
+.sign-in-up-page-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #e0f2ff, #cce6f9);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Main sign-in card container */
+  .sign-main-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px 25px;
+    border-radius: 20px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #001f3f;
+  }
+  
+  /* Heading */
+  .sign-main-container h1 {
+    margin-bottom: 25px;
+    font-size: 2rem;
+    color: #001f3f;
+  }
+  
+  /* Form styling */
+  .sign-main-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Input group styling */
+  .sign-main-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .sign-main-container label {
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #003366;
+  }
+  
+  /* Input styling */
+  .sign-main-container input,
+  .sign-main-container select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #bcd9f1;
+    background-color: #eef7fd;
+    transition: border 0.3s ease;
+  }
+  
+  .sign-main-container input:focus {
+    outline: none;
+    border: 1.5px solid #0074b8;
+    background-color: #e3f1fc;
+  }
+  
+  /* Button */
+  .sign-main-container button {
+    background-color: #0074b8;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sign-main-container button:hover {
+    background-color: #00588b;
+  }
+  
+  /* Paragraphs below form */
+  .sign-main-container p {
+    margin-top: 15px;
+    color: #333;
+    font-size: 0.95rem;
+  }
+  
+  .sign-main-container p span {
+    color: #004770;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .sign-main-container p span:hover {
+    color: #001f3f;
+    text-decoration: underline;
+  }
+  
